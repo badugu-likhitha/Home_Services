@@ -1,0 +1,146 @@
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main layout for side-by-side sections */
+.main-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: stretch; /* Make both sections stretch equally in height */
+}
+
+/* Form styling */
+.contact-form-section {
+  background-color:  #f8fff9;;
+  border-radius: 1rem;
+  padding: 2rem;
+  flex: 1;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-field label {
+  color: #f0f9f9;
+  font-size: 1rem;
+  
+}
+
+.form-field input,
+.form-field textarea {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc; /* ✅ light gray border */
+  background-color: white;
+  font-size: 1rem;
+  color: #111827;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: #047857; /* Highlight on focus */
+}
+
+
+
+.send-button {
+  background-color: #047857;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.send-button:hover {
+  background-color: #047857;
+}
+
+/* Contact info beside form */
+.contact-info-section {
+  flex: 1;
+  min-width: 180px;
+  padding: 1px;
+}
+
+.contact-info-section h1 {
+  font-size: 2.5rem;
+  color: #004d4d;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 0.1rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item h3 {
+  color: #004d4d;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+  color: #666;
+}
+
+/* Footer */
+.footer-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.footer-column h4 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.footer-column a {
+  display: block;
+  color: #666;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column a:hover {
+  color: #008080;
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column p {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
