@@ -33,7 +33,7 @@ export const BookingForm = ({ service, onConfirm }) => {
     };
 
     try {
-      const response = await fetch('http://localhost:8081/api/bookings', {
+      const response = await fetch('http://localhost:9090/homeservice1/api/bookings', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(bookingData),

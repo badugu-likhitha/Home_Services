@@ -36,7 +36,7 @@ export const Contact = () => {
         mobileNumber: formData.mobileNumber,
       };
 
-      const response = await axios.post('http://localhost:8081/api/contact/submit', payload);
+      const response = await axios.post('http://localhost:9090/homeservice1/api/contact/submit', payload);
 
       if (response.status === 200 || response.status === 201) {
         setStatusMessage('Message sent successfully!');

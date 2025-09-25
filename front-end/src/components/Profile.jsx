@@ -14,7 +14,7 @@ export const Profile = ({ isLoggedIn, userMobile }) => {
     if (isLoggedIn && userMobile) {
       const fetchUserInfo = async () => {
         try {
-          const response = await fetch(`http://localhost:8081/api/login/${userMobile}`); // Updated endpoint
+          const response = await fetch(`http://localhost:9090/homeservice1/api/login/${userMobile}`); // Updated endpoint
           if (response.ok) {
             const data = await response.json();
             console.log('User Info:', data);
@@ -38,7 +38,7 @@ export const Profile = ({ isLoggedIn, userMobile }) => {
     if (isLoggedIn && activeTab === 'orders') {
       const fetchBookings = async () => {
         try {
-          const response = await fetch(`http://localhost:8081/api/bookings/user/${userMobile}`);
+          const response = await fetch(`http://localhost:9090/homeservice1/api/bookings/user/${userMobile}`);
           if (response.ok) {
             const data = await response.json();
             console.log('Fetched bookings:', data);
@@ -67,7 +67,7 @@ export const Profile = ({ isLoggedIn, userMobile }) => {
     }
 
     try {
-      const response = await fetch(`http://localhost:8081/api/bookings/${bookingId}`, {
+      const response = await fetch(`http://localhost:9090/homeservice1/api/bookings/${bookingId}`, {
         method: 'DELETE',
       });
 

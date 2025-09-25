@@ -17,7 +17,8 @@ export const Signup = ({ onSignupSuccess }) => {
 
     if (/^\d{10}$/.test(trimmedPhone)) {
       try {
-        const response = await fetch('http://localhost:8081/api/login/signup', {
+        
+        const response = await fetch('http://localhost:9090/homeservice1/api/login/signup', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
